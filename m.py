@@ -4,11 +4,12 @@ import telebot
 import subprocess
 import datetime
 import os
+import time
 
 from keep_alive import keep_alive
 keep_alive()
 # insert your Telegram bot token here
-bot = telebot.TeleBot('7262217536:AAHX6ROfNRk1ZH9ZcwokcwvyR4jFtk3fKP8')
+bot = telebot.TeleBot('7041808475:AAH6f9XfZJM_VKV2d2ceJMaCDDVAvCm3FG4')
 
 # Admin user IDs
 admin_id = ["1065510487"]
@@ -227,7 +228,7 @@ def clear_users_command(message):
         except FileNotFoundError:
             response = "users are already cleared ❌."
     else:
-        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @mesh213 ❄."
+        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @mesh5015 ❄."
     bot.reply_to(message, response)
  
 
@@ -446,10 +447,12 @@ def broadcast_message(message):
 
 
 #bot.polling()
-while True:
-    try:
-        bot.polling(none_stop=True)
-    except Exception as e:
-        print(e)
-
+if __name__ == '__main__':
+    while True:
+        try:
+            bot.polling(non_stop=True, interval=0)
+        except Exception as e:
+            print(e)
+            time.sleep(5)
+            continue
 
