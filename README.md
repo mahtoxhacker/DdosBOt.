@@ -1,7 +1,7 @@
-Video Tutorial https://youtu.be/EOqffCi_9n8
+
 ## Contact 
 
-For any queries or support or removal, contact [@mesh5025](https://t.me/mesh5025) on Telegram. 
+## For any queries or support or removal, contact on Telegram. 
 
 ONLY FOR TESTING PURPOSE 
 ---
@@ -33,7 +33,7 @@ This repository contains a Telegram bot designed to perform DDoS attacks. The bo
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/yourusername/ddos-attack-bot.git
+   git clone https://github.com/mahtoxhacker/DdosBOt.git
    cd ddos-attack-bot
    ```
 
