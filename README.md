@@ -34,7 +34,7 @@ This repository contains a Telegram bot designed to perform DDoS attacks. The bo
 
    ```sh
    git clone https://github.com/mahtoxhacker/DdosBOt.git
-   cd ddos-attack-bot
+   cd DdosBOt
    ```
 
 2. Install the required libraries:
